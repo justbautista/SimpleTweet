@@ -99,7 +99,8 @@ public class ComposeActivity extends AppCompatActivity {
                 else {
                     tvCharCount.setTextColor(defaultColor);
                 }
-                tvCharCount.setText(String.valueOf(charSequence.length()));
+
+                tvCharCount.setText(String.valueOf(MAX_TWEET_LENGTH - charSequence.length()));
             }
 
             @Override
